@@ -5,6 +5,8 @@
     <title></title>
   </head>
   <body>
-    <%= @contacts_link %>
+<% @contacts.each do |contact| %>
+<%= contact.full_name %> <%= contact.email %> <%= contact.note %>
+<% end %>
   </body>
 </html>
